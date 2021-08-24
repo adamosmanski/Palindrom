@@ -1,13 +1,13 @@
 ﻿using System;
 
 
-namespace Konsola
+namespace Palindrome
 {
     class Program
     {
         public static bool IsPalindrome(string palindrom)
         {
-            
+
             palindrom = palindrom.Replace(" ", "").ToLower();
             int Length_String;
             Length_String = palindrom.Length;
@@ -16,7 +16,7 @@ namespace Konsola
                 if (palindrom[i] != palindrom[Length_String - i - 1])
                 {
                     Console.WriteLine("The words aren't palindrome");
-                    return false;                    
+                    return false;
                 }
             }
             Console.WriteLine("The words are palindrome");
